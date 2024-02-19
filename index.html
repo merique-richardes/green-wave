@@ -5,13 +5,14 @@
               <link rel = "stylesheet" href = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
            </head>
 <body>
-              <div id = "map" style = "width: 900px; height: 580px"></div>
+              <div id = "map" style = "width: 900px; height: 580px; margin: auto"></div>
 <script src = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
               <script>
-                 // Creating map options
+                 // starting position of the map
+                 // in the future, there should be a menu that asks if the user is a solar supplier or installer.
                  var mapOptions = {
-                    center: [17.385044, 78.486671],
-                    zoom: 10
+                    center: [37.8272, -122.2913], // set to SF
+                    zoom: 5
                  }
                  
                  // Creating a map object
