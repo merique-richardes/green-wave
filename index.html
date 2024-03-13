@@ -1,29 +1,33 @@
 <!DOCTYPE html>
-        <html>
-           <head>
-              <title>OSM and Leaflet</title>
-              <link rel = "stylesheet" href = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
-           </head>
-<body>
-              <div id = "map" style = "width: 900px; height: 580px; margin: auto"></div>
-<script src = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-              <script>
-                 // starting position of the map
-                 // in the future, there should be a menu that asks if the user is a solar supplier or installer.
-                 var mapOptions = {
-                    center: [37.8272, -122.2913], // set to SF
-                    zoom: 5
-                 }
-                 
-                 // Creating a map object
-                 var map = new L.map('map', mapOptions);
-                 
-                 // Creating a Layer object
-                 var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
-                 
-                 // Adding layer to the map
-                 map.addLayer(layer);
-              </script>
-           </body>
+   <html>
+      <head>
+         <title>Green Wave</title>
+         <link rel = "stylesheet" href = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
+      </head>
+      <body>
+         <div id = "map" style = "width: 900px; height: 580px; margin: auto"></div>
+         <script src = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+         <script>
+            // starting position of the map
+            // in the future, there should be a menu that asks if the user is a solar supplier or installer.
+            var mapOptions = {
+               center: [37.8272, -122.2913], // set to SF
+               zoom: 5
+            }
+            
+            // Creating a map object, using the dictionary we just made.
+            var map = new L.map('map', mapOptions);
+            
+            // Creating a Layer object
+            var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+            
+            // Adding layer to the map
+            map.addLayer(layer);
+
+            var marker = L.marker([37.79104144526248, -122.40121852027168])
+            .addTo(map)
+            .bindPopup("Sunrun Solar")
+         </script>
+      </body>
            
-        </html>
+   </html>
