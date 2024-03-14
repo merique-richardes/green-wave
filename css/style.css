@@ -1,0 +1,22 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com, Adapted by Merrick
+ */
+
+/* This controls the nav*/
+nav ul a,
+nav .brand-logo {
+  color: #fff3e2;
+  background-color: #298f77;
+}
+
+nav {
+    background-color: #298f77;
+}
+
+body {
+    background-color: #fff3e2;
+}

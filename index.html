@@ -2,10 +2,47 @@
    <html>
       <head>
          <title>Green Wave</title>
+         <!--import Leaflet css-->
          <link rel = "stylesheet" href = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
+         <!--Import Google Icon Font-->
+         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+         <!--Import materialize.css-->
+         <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+         <!--Import style.css-->
+         <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
+         <!--Let browser know website is optimized for mobile-->
+         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+         
       </head>
       <body>
          <script src = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+         <div class="navbar-fixed">
+            <div class="row">
+              <nav>
+                <div class="nav-wrapper bg-dark">
+                  <div class="col s12">
+                    <a href="" class="brand-logo">
+                      GreenWave
+                    </a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                      <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                      <li>
+                        <a href="">Map</a>
+                      </li>
+                      <li>
+                        <a href="">About</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+         
+
          <div id = "map" style = "width: 900px; height: 580px; margin: auto"></div>
          <script>
             // creates the default green wave icon settings class.
@@ -17,8 +54,9 @@
                }
             });
 
-            var supplierIcon = new GreenWaveIcon({iconUrl: 'supplierIcon.png'}),
-            installerIcon = new GreenWaveIcon({iconUrl: 'installerIcon.png'});
+            // initializes the custom icons.
+            var supplierIcon = new GreenWaveIcon({iconUrl: './assets/supplierIcon.png'}),
+            installerIcon = new GreenWaveIcon({iconUrl: './assets/installerIcon.png'});
 
 
             // starting position of the map
@@ -45,6 +83,8 @@
             .addTo(map)
             .bindPopup("Censolar Nicaragua")
          </script>
+         <!--materialize script, meant to stay at end of document-->
+         <script type="text/javascript" src="js/materialize.min.js"></script>
       </body>
            
    </html>
