@@ -28,6 +28,15 @@ var GreenWaveIcon = L.Icon.extend({
  // Adding layer to the map
  map.addLayer(layer);
 
+ // reading marker database
+ // taken from https://stackoverflow.com/questions/62864483/read-sqlite-database-with-node-js
+ let markers_db = new sqlite3.Database('./database/markers.db', (err) => {
+      if (err) {
+     console.error(err.message);
+   }
+   console.log('Connected to the markers database.');
+ });
+
  var marker = L.marker([37.78955930049995, -122.40403373160581], {icon: supplierIcon})
  .addTo(map)
  .bindPopup("Aurora Solar")
