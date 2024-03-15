@@ -20,3 +20,9 @@ nav {
 body {
     background-color: #fff3e2;
 }
+
+/* Changes the Leafletjs popup stylings */ 
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+  background-color: #fff3e2;
+  box-shadow: #298f77
+}
