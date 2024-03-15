@@ -46,7 +46,7 @@ var customOptions =
  .addTo(map)
  .bindPopup(aurorasolar, customOptions)
 
- var marker = L.marker([12.103539004571969, -86.26922537500955], {icon: installerIcon})
+ var marker = L.marker([12.146666245226955, -86.26020278879957], {icon: installerIcon})
  .addTo(map)
  .bindPopup(ecosolar, customOptions)
 
