@@ -31,8 +31,8 @@ var GreenWaveIcon = L.Icon.extend({
 
 // create popup contents, should be a string with template literals embedded into it in the future...
 // this implementation is terrible.
-var aurorasolar = "<div><a style='text-align: center;' href = https://aurorasolar.com/> Aurora Solar </a> <hr> <p> Provides software suite for simplifying the site assesment and installation design process.</p> <hr> <p>Cost: $159-259</p> <hr> <p> <i class='tiny material-icons'>star</i> <i class='tiny material-icons'>star</i> <i class='tiny material-icons'>star</i> <i class='tiny material-icons'>star</i> <i class='tiny material-icons'>star_half</i> </p> </div>";
-var ecosolar = "<div><a style='text-align: center;' href = http://www.ecosolarenergy.net/> Eco Solar Energy </a> <hr> <p> Nicaraguan residential solar intaller. </p> <hr> <p>Cost: Requires Solicitation. </p> <hr> <p> <i class='tiny material-icons'>star</i> <i class='tiny material-icons'>star</i> <i class='tiny material-icons'>star</i> <i class='tiny material-icons'>star_half</i> <i class='tiny material-icons'>star_border</i> </p> </div>";
+var aurorasolar = "<div><a style='text-align: center;' href = https://aurorasolar.com/> Alias Solar </a> <hr> <p> Provides software suite for simplifying the site assesment and installation design process.</p> <hr> <p>Cost: $159-259</p> <hr> <p> <i class='tiny material-icons'>star</i> <i class='tiny material-icons'>star</i> <i class='tiny material-icons'>star</i> <i class='tiny material-icons'>star</i> <i class='tiny material-icons'>star_half</i> </p> </div>";
+var ecosolar = "<div><a style='text-align: center;' href = http://www.ecosolarenergy.net/> Pseudonym Solar Energy </a> <hr> <p> Nicaraguan residential solar intaller. </p> <hr> <p>Cost: Requires Solicitation. </p> <hr> <p> <i class='tiny material-icons'>star</i> <i class='tiny material-icons'>star</i> <i class='tiny material-icons'>star</i> <i class='tiny material-icons'>star_half</i> <i class='tiny material-icons'>star_border</i> </p> </div>";
 // specify popup options 
 var customOptions =
    {

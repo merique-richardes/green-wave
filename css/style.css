@@ -26,3 +26,31 @@ body {
   background-color: #fff3e2;
   box-shadow: #298f77
 }
+
+.flexbox {
+  display: flex;
+}
+
+.box1 {
+  flex: 1;
+}
+
+.box2 {
+  flex: 3;
+}
+
+.beigeText {
+  color: #fff3e2;
+}
+
+.greenWaveText {
+  color: #298f77;
+}
+
+.beige {
+  background-color: #fff3e2;
+}
+
+.greenWave {
+  background-color: #298f77;
+}
