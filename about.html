@@ -2,10 +2,6 @@
    <html>
       <head>
          <title>Green Wave</title>
-         <!--import Leaflet css-->
-         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-         crossorigin=""/>
          <!--Import Google Icon Font-->
          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
          <!--Import materialize.css-->
@@ -21,10 +17,6 @@
          
       </head>
       <body>
-        <!--import leaflet javascript-->
-        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-        crossorigin=""></script>
          <div class="navbar-fixed">
             <div class="row">
               <nav>
@@ -33,12 +25,12 @@
                     <a href="" class="brand-logo">
                       GreenWave
                     </a>
-                    <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                    <a href="./index.html" data-target="mobile-demo" class="sidenav-trigger">
                       <i class="material-icons">menu</i>
                     </a>
                     <ul class="right hide-on-med-and-down">
                       <li>
-                        <a href="">Map</a>
+                        <a href="./index.html">Map</a>
                       </li>
                       <li>
                         <a href="./about.html">About</a>
@@ -53,27 +45,14 @@
             </div>
           </div>
          
-
-         <div id = "map" style = "width: 900px; height: 580px; margin: auto"></div>
-
         <!--contains legend-->
         <div class="flexbox">
           <div class="box2">
           </div>
           <div class="box2">
-                <div class="card-panel beige" style="outline: 10px #298f77;">
-                  <img src='./assets/supplierIcon.png' style = "height: 40px;">
-                  <p class="greenWaveText">San Francisco solar suppliers are represented by red pins</p>
-                  <img src='./assets/installerIcon.png' style = "height: 40px;">
-                  <p class="greenWaveText">Residential solar installers are represented by green pins</p>
-                </div>
-          </div>
-          <div class="box1">
-          </div>
-          <div class="box2">
             <div class="card-panel beige" style="outline: 10px #298f77;">
-              <h class="greenWaveText">What Am I Looking At?</h>
-              <p class="greenWaveText">Above is our map interface. You can click color-coded pins, corresponding to the legend on the left. By doing so, you can see basic information about San Francisco solar suppliers, and residential solar installers. In the future, there will be many pins equal to the number of users. We also aim to have contact information, filtering options, and a text chat feature to facilitate the creation of business relationships.</p>
+              <h class="greenWaveText">About Us</h>
+              <p class="greenWaveText">Greenwave is a team from Minerva University focused on combating Climate Change by focusing on Solar array adoption in developing countries like Brazil. ​​ Our platform is an online map platform that connects Nicaragua residential installers with Bay Area solar developers. This solution utilizes the position of the residential installers within their country. They can spread accurate information about solar tech, increasing reputation and leading to more adoption. Our solution is an online platform that provides the residential installer with the latest developments and allows the developer to spread their tech abroad through direct connections with local installers.</p>
             </div>
           </div>
           <div class="box2">
@@ -82,11 +61,6 @@
         
 
 
-
-
-
-         <!--contains the script for the map-->
-         <script type="module" src="./js/map.js"></script>
          <!--Materialize script, meant to stay at end of document-->
          <script type="text/javascript" src="js/materialize.min.js"></script>
       </body>
